@@ -1,0 +1,15 @@
+.cache/
+.codelite/
+.ctagsd/
+build-Debug/
+*.json
+Makefile
+*.workspace
+*.clangd
+*.clang-format
+*.mk
+*.project
+*.md
+
+
+
