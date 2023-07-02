@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     
     const int charges {30};
-    const double sales_rate {0.06};
+    const double tax_rate {0.06};
     
     cout<<"Enter the number of rooms: ";
     int nmbr_of_room {0};
@@ -19,8 +19,12 @@ int main(){
     int cost = nmbr_of_room*charges;
     cout<<"Cost: "<<cost<<endl;
     
-    cout<<"Tax: $3.6"<<endl;
+    double tax = (nmbr_of_room)*(charges)*(tax_rate);
+    cout<<"Tax: "<<tax<<endl;
     cout<<"================================"<<endl;
-    cout<<"Total estimate: "<<
+    double total_estimate;
+    total_estimate = (cost) + (tax);
+    cout<<"Total estimate: "<<total_estimate<<endl;
+    cout<<"This estimate is valid for 30 days";
     return 0;
 }
